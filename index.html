@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const roles = ["A passionate Front-end Developer"];
+            let index = 0;
+            const roleText = document.getElementById("role-text");
+            
+            function updateRole() {
+                roleText.textContent = roles[index];
+                index = (index + 1) % roles.length;
+            }
+            
+            setInterval(updateRole, 2000);
+            updateRole();
+        });
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="flex flex-wrap justify-between items-center p-6 bg-gray-800 shadow-lg">
+        <h1 class="text-3xl font-bold">Chintha Bhavitha</h1>
+        <nav class="flex space-x-4">
+            <a href="#about" class="hover:text-blue-400">About</a>
+            <a href="#education" class="hover:text-blue-400">Education</a>
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="hero" class="text-center py-20 px-4">
+        <div class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-blue-500 shadow-lg overflow-hidden">
+            <img src="bhavitha.png" alt="Your Image" class="w-full h-full object-cover">
+        </div>
+        <h2 class="text-4xl font-semibold">Hi, I'm Chintha Bhavitha</h2>
+        <p id="role-text" class="text-gray-400 mt-3 text-xl">A passionate Front-end Developer</p>
+        
+        <!-- Small Font Awesome icons under the text -->
+        <div class="mt-3 flex justify-center gap-4">
+            <a href="https://github.com/Bhavitha2402" target="_blank" class="text-gray-400 hover:text-blue-400 text-lg">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 text-lg">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    
+         
+        
+        <a href="resume.pdf" download class="mt-5 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-lg inline-block">Download Resume</a>
+    </section>
+    
+    
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-5">
+        <div class="w-full md:w-1/2 h-72 overflow-hidden shadow-lg rounded-lg">
+            <img src="about pic.png" alt="About Image" class="w-full h-full object-cover">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h2 class="text-5xl font-semibold">About Me</h2>
+            <p class="text-gray-300 mt-3">I am a passionate front-end developer with a strong foundation in HTML, CSS, JavaScript, and Tailwind CSS. I enjoy bringing designs to life and crafting user-friendly, responsive websites. Constantly learning and improving, I aim to create seamless digital experiences. Beyond coding, I love exploring new technologies and staying updated with the latest trends in web development.</p>
+            <h3 class="text-5xl font-semibold mt-4">Skills</h3>
+            <ul class="text-gray-400 mt-2 space-y-1">
+                <li>- HTML & CSS</li>
+                <li>- JavaScript</li>
+                <li>- Tailwind CSS</li>
+                <li>-  C</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-4 text-center">
+        <h2 class="text-3xl font-semibold">Education</h2>
+        <div class="mt-5 max-w-4xl mx-auto text-left">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+                <h3 class="text-xl font-semibold">Bachelor of Technology (B.Tech)</h3>
+                <p class="text-gray-400">Malla Reddy College of Engineering|  2023 -  2027</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+                <h3 class="text-xl font-semibold">Intermediate Education</h3>
+                <p class="text-gray-400">Sri Chaitanya Junior Collge|  2021-2023</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">School Education</h3>
+                <p class="text-gray-400">IICT ZM High School | 2011-2021</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="py-20 px-4 text-center">
+        <h2 class="text-3xl font-semibold">Projects</h2>
+        <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="Amazon Clone img.jpg" alt="Amazon Clone" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">Amazon Clone</h3>
+                <p class="text-gray-400">Developed an Amazon Clone using HTML, CSS, and JavaScript, replicating the UI and responsive design.</p>
+                <a href="https://github.com/Bhavitha2402/Amazon-Clone" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="Screenshot 2024-10-07 161458.png" alt="QR Code Generator" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">QR Code Generator</h3>
+                <p class="text-gray-400">Built a QR Code Generator using HTML, CSS, and JavaScript, allowing users to generate QR codes.</p>
+                <a href="https://github.com/Bhavitha2402/QR-code-Generator" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="text to voice img.png" alt="Text-to-Voice Converter" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">Voice to Text Converter</h3>
+                <p class="text-gray-400">Developed a Text-to-Voice Converter using HTML, CSS, and JavaScript, enabling users to convert typed text into speech.</p>
+                <a href="https://github.com/Bhavitha2402/Text-Voice-Converter" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="landing page.png" alt="Landing Page" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">Landing Page</h3>
+                <p class="text-gray-400">Designed a responsive landing page using HTML, CSS, and JavaScript, featuring an engaging UI with smooth animations.</p>
+                <a href="https://github.com/Bhavitha2402/LandingPage2" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="spotifyClone.png" alt="Spotify Clone" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">Spotify Clone</h3>
+                <p class="text-gray-400">Developed a Spotify Clone using HTML, CSS, and JavaScript, replicating the UI with a responsive and interactive music player.</p>
+                <a href="https://github.com/Bhavitha2402/Spotify-Clone" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="imagegallery.png" alt="Image Gallery" class="mt-4 rounded-lg shadow-lg w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold">Image Gallery</h3>
+                <p class="text-gray-400">Explore a stunning collection of images showcasing creativity and moments. Designed with HTML and CSS for a visually appealing gallery layout.</p>
+                <a href="https://github.com/Bhavitha2402/Image-Gallery" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+        </div>
+        <div class="mt-8">
+            <a href="https://github.com/Bhavitha2402" target="_blank" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-lg inline-block text-lg">
+                View More Projects on GitHub
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact" class="py-20 px-4 text-center">
+        <h2 class="text-3xl font-semibold">Contact Me</h2>
+        <p class="text-gray-400 mt-3">Email: chinthabhavitha24@gmail.com</p>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4"><p class="text-center">Copyright ©2025 All rights reserved</p></footer>
+</body>
+</html>
